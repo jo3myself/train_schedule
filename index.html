@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<div class="container">
+	<div class="row jumbotron">
+		<center>
+		<p><h1>Anytime Is Train Time</h1></p>
+		<p><h4>Choo Choo Chee Chee</h4></p>
+		</center>
+	</div>
+	
+	<div class="row">
+		<div class="panel panel-primary">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">Current Train Schedule</h3>
+		  </div>
+		  <div class="panel-body">
+		    <table class="table table-condensed">
+		    	<thead>
+		    	<tr>
+		    		<th>Train name</th>
+		    		<th>Destination</th>
+		    		<th>Frequency (min)</th>
+		    		<th>Next Arrival</th>
+		    		<th>Minutes away</th>
+		    	</tr>
+		    	</thead>
+		    	<tbody class="train">	
+		    	</tbody>
+		    </table>
+		  </div>
+		</div>
+			
+	</div>
+
+
+	<div class="row">
+		<div class="panel panel-primary">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">Add Train</h3>
+		  </div>
+		  <div class="panel-body">
+		  	<form>
+			  <div class="form-group">
+			    <label>Train name</label>
+			    <input type="text" class="form-control trainName" id="" placeholder="">
+			  </div>
+			  <div class="form-group">
+			    <label>Destination</label>
+			    <input type="text" class="form-control destination" id="" placeholder="">
+			  </div>
+			  <div class="form-group">
+			    <label>First Train Time (HH:mm - Military time)</label>
+			    <input type="text" class="form-control firstTime" id="" placeholder="">
+			  </div>
+			  <div class="form-group">
+			    <label>Frequency (min)</label>
+			    <input type="text" class="form-control frequency" id="" placeholder="">
+			  </div>
+			  <button type="submit" class="btn btn-primary submit">Submit</button>
+			</form>
+
+		    
+		  </div>
+		</div>
+		
+	</div>
+	
+
+
+
+
+</div>
+<script type="text/javascript" src="./assets/javascript/game.js"></script>
+</body>
+</html>
